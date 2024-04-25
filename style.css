@@ -32,6 +32,17 @@ body {
     transition: .2s;
 }
 
+h2.titulo{
+    margin: 40px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #1C8394;
+}
+
 /* ESTILO DO CABEÇALHO */
 
 header {
@@ -116,3 +127,6 @@ section .topo-do-site .flex{
 
 /* ESTILO DAS ESPECIALIDADES */
 
+section .especialidades{
+    padding: 40px 4%;
+}
