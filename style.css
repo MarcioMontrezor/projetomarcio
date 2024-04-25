@@ -83,6 +83,7 @@ header nav ul li a{
     transform: scale(1.08);
 }
 /* ESTILO DO TOPO DO SITE */
+
 section .topo-do-site{
     padding: 40px 4%;
 }
@@ -172,3 +173,4 @@ section.sobre .flex{
     color: white;
 
 }
+
