@@ -43,7 +43,7 @@ h2.titulo span{
     color: #1C8394;
 }
 
-button:hover{
+button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0 px 8px #1c8294;
     transform: scale(1.08);
 }
@@ -51,7 +51,7 @@ button:hover{
 /* ESTILO DO CABEÇALHO */
 
 header {
-    padding: 40px 4%;
+    padding: 10px 4%;
 
 }
 
@@ -86,36 +86,40 @@ header nav ul li a{
 /* ESTILO DO TOPO DO SITE */
 
 section .topo-do-site{
-    padding: 40px 4%;
+    padding: 5px 4%;
 }
 
 section .topo-do-site .flex{
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 40px;
 }
 .topo-do-site h1{
     color: white;
     font-size: 50px;
-    line-height: 55px;
+    line-height: 50px;
     padding: 50px 0;
 }
 
 .topo-do-site .txt-topo-site h1 span{
     color: #1C8394;
+    margin: 10px;
+    font-size: 70px;
 }
 
 .topo-do-site .txt-topo-site p{
     color: white;
-    margin: 40px 0;
+    margin:10px 0;
+    margin-right: 10px;
+    padding-bottom: 30px;
 }
 
 .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 50px;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 
 @keyframes flutuar{
@@ -134,13 +138,13 @@ section .especialidades{
 }
 
 section.especialidades .flex{
-    gap: 60px;
+    gap: 40px;
 }
 
 .especialidades .especialidades-box{
     color: white;
-    padding: 40px;
-    margin-top: 25px;
+    padding: 10px;
+    margin-top: 15px;
     border-radius: 20px;
     transition: 0.2s;
     text-align: justify;
@@ -164,7 +168,7 @@ section.especialidades .flex{
 /* ESTILO DO SOBRE */
 
 section.sobre{
-    padding: 80px 4%;
+    padding: 120px 4%;
 }
 
 section.sobre .flex{
@@ -192,7 +196,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -207,7 +211,7 @@ section.sobre .flex{
 /* ESTILO DO PORTIFÓLIO */
 
 section.portifolio{
-    padding: 80px 4%;
+    padding: 40px 4%;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.137);
 }
 section.portifolio .flex{
@@ -250,4 +254,76 @@ section.portifolio .flex{
 
 .overlay:hover{
     opacity: 1;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+
+section.formulario{
+    padding: 40px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(80, 76, 76, 0.178);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;   
+    border-radius: 15px; 
+    color: white;
+    font-size: 15px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #1c8294;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.137);
+}
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+footer .line-footer p i{
+    color: #1c8294;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+.borda{
+    border-top: 2px solid #1c8294
 }
