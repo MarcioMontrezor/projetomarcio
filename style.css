@@ -327,3 +327,75 @@ footer .line-footer p a{
 .borda{
     border-top: 2px solid #1c8294
 }
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /* TOPO DO SITE */
+    section .topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+        padding: 50px 0;
+    }
+    
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+    section .topo-do-site .flex{
+        gap: 40px;
+    }
+
+    /* ESTILO DAS ESPECIALIDADES */
+    section .especialidades{
+        padding: 40px 8%;
+    }
+    /* SOBRE */
+    section.sobre{
+        padding: 40px 8%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+    .img-sobre img{
+        width: 100% ;
+    }
+    /* PORTIFOLIO */
+    section.portifolio{
+        padding: 30px 8%;
+        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.137);
+    }    
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portifolio .flex{
+        gap: 60px;
+    }
+    /* RODAPE */
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .line-footer{
+        text-align: center;
+    }
+}
